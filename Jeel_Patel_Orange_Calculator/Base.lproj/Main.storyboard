@@ -68,14 +68,14 @@
                                     <action selector="buttonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOW-gT-cvE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92E-Cz-fzb">
-                                <rect key="frame" x="228" y="539" width="46" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URi-6W-km0">
+                                <rect key="frame" x="113" y="539" width="46" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="3"/>
+                                <state key="normal" title="2"/>
                                 <connections>
-                                    <action selector="buttonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8M-SO-JsG"/>
+                                    <action selector="buttonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hc2-qE-ecz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7u-H5-RXR">
@@ -216,14 +216,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URi-6W-km0">
-                                <rect key="frame" x="113" y="539" width="46" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92E-Cz-fzb">
+                                <rect key="frame" x="228" y="539" width="46" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <size key="titleShadowOffset" width="5" height="5"/>
-                                <state key="normal" title="2"/>
+                                <state key="normal" title="3"/>
                                 <connections>
-                                    <action selector="buttonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hc2-qE-ecz"/>
+                                    <action selector="buttonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8M-SO-JsG"/>
                                 </connections>
                             </button>
                         </subviews>
