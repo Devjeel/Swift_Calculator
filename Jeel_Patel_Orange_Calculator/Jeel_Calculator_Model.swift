@@ -14,8 +14,7 @@ class Jeel_Calculator_Model {
     var secondNumber : Double?
     var operation : String?
     
-    func updateNumber(newNumber: Double ){
-        
+    func updateNumber(newNumber: Double){
         if(firstNumber == nil){
             firstNumber = newNumber;
         } else if (operation == nil){
@@ -23,5 +22,28 @@ class Jeel_Calculator_Model {
         } else {
             secondNumber = newNumber
         }
+    }
+    
+    func getResult() -> Double {
+        var result: Double
+        switch (operation){
+        case "+":
+            result = firstNumber! + secondNumber!
+        case "-":
+            result = firstNumber! - secondNumber!
+        case "x":
+            result = firstNumber! * secondNumber!
+        case "/":
+            result = firstNumber! / secondNumber!
+        default:
+            result = 0.0
+        }
+        return result 
+    }
+    
+    func reset() {
+        firstNumber = nil
+        secondNumber = nil
+        operation = nil
     }
 }

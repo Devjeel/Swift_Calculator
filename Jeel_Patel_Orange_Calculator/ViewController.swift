@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     //MARK:- Outlets
     @IBOutlet weak var numberDisplay: UITextField!
+    var startNewNumber = true
     
     //MARK:- Other Variables
     var calculatorModel = Jeel_Calculator_Model()
@@ -32,18 +33,35 @@ class ViewController: UIViewController {
         
         switch (buttonText){
             
-            case "0", "1","2","3", "4","5", "6", "7","8","9":
-                print(buttonText)
-                if(currentValue == "0.0"){
+            case "0", "1", "2", "3", "4", "5", "6", "7","8","9":
+                if(startNewNumber){
                    currentValue = buttonText
                 } else {
-                    currentValue += buttonText
+                    currentValue = currentValue + buttonText
                 }
-                print(currentValue)
-                calculatorModel.updateNumber(newNumber: <#T##Double#>(currentValue))
+                startNewNumber = false
+                calculatorModel.updateNumber(newNumber: Double(currentValue)!)
             
-            case "+":
+            case "+", "-", "x", "/":
+                if(calculatorModel.secondNumber != nil){
+                    currentValue = String(calculatorModel.getResult())
+                    calculatorModel.reset()
+                    calculatorModel.updateNumber(newNumber: Double(currentValue)!)
+                }
                 calculatorModel.operation = buttonText
+                startNewNumber = true
+            
+            case "=":
+                if(calculatorModel.secondNumber == nil){
+                   calculatorModel.updateNumber(newNumber: Double(currentValue)!)
+                }
+                currentValue = String(calculatorModel.getResult())
+                startNewNumber = true
+            
+            case "C":
+                currentValue = "0.0"
+                calculatorModel.reset()
+                startNewNumber = true
             
             default:
                 print("Default");
